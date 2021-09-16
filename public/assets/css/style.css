@@ -1,0 +1,9 @@
+.radius-20{
+  border-radius: 20px !important;
+}
+.radius-10{
+  border-radius: 10px !important;
+}
+*body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
