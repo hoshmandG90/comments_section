@@ -18,7 +18,7 @@ class Login extends Component
         ]);
           
         if(Auth::attempt(['email' => $this->email, 'password' => $this->password])){
-            return redirect()->to(route('index'));
+            return redirect()->to(route('home'));
 
         }else{
             $this->check=Auth::user() == $this->email ? '':'the email and password does not match';
