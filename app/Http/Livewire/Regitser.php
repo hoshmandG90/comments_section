@@ -16,9 +16,9 @@ class Regitser extends Component
 
     public function RegisterPage(){
         $validate=$this->validate([
-            'name'=>'required',
-            'email'=>'required|email',
-            'password'=>'required|confirmed'
+             'name'=>'required',
+            'email'=>'required|email|unique:users',
+            'password'=>'required|same:password_confirmation'
         ]);
         user::create([
             'name'=>$this->name,
