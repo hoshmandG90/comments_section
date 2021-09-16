@@ -29,14 +29,14 @@
 
 
         <div class="flex w-full justify-content-between bg-purple-900 px-4 text-white">
-        <a class="mx-3 py-4" href="{{route('index',app()->getLocale())}}">{{__('en.home')}}</a>
+        <a class="mx-3 py-4" href="{{route('home')}}">Home</a>
         @auth
           @livewire('logout')            
         @endauth
         @guest
         <div class="py-4">
-            <a class="mx-3 " href="{{route('login',app()->getLocale())}}">{{__('en.login')}}</a>
-            <a class="mx-3 " href="{{route('Regitser',app()->getLocale())}}">{{__('en.Register')}}</a>
+            <a class="mx-3 " href="{{route('login')}}">Login</a>
+            <a class="mx-3 " href="{{route('Regitser')}}">Regitser</a>
         </div>
         @endguest
      
